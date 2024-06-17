@@ -1,0 +1,382 @@
+* {
+    font-family: "Nunito Sans", sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 600;
+    padding-right: 10px;
+    margin: 0 30px;
+    padding: 5px 15px;
+    border-radius: 30px;
+}
+
+nav a:hover {
+    background-color: #be9c02;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+    background-color: #a57816;
+}
+
+.checkuno {
+    font-size: 30px;
+    color: #ffffff;
+    float: right;
+    line-height: 70px;
+    margin-right: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.redes img {
+    height: 40px;
+}
+
+.redes {
+    text-align: right;
+    margin-right: 1rem;
+}
+
+.encabezado-img {
+    background-image: url(../assets/cafe\ header\ img.jpg);
+    height: 500px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.encabezado-img p {
+    font-size: 20px;
+}
+
+.encabezado-img h1 {
+    font-size: 50px;
+    padding: 20px;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.titulo-carrousel {
+    align-items: center;
+    text-align: center;
+}
+
+.contenedor-fotos {
+    width: 60%;
+    height: auto;
+    margin: 50px auto 0;
+    overflow: hidden;
+}
+
+.contenedor-fotos ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 16s infinite alternate ease-in-out;
+}
+
+.contenedor-fotos li {
+    list-style: none;
+    width: 100%;
+}
+
+.contenedor-fotos img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+@keyframes slide {
+    0% {
+        margin-left: 0%;
+    }
+
+    20% {
+        margin-left: 0%;
+    }
+
+    25% {
+        margin-left: -100%;
+    }
+
+    45% {
+        margin-left: -100%;
+    }
+
+    50% {
+        margin-left: -200%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    75% {
+        margin-left: -300%;
+    }
+
+    95% {
+        margin-left: -300%;
+    }
+
+    100% {
+        margin-left: -400%;
+    }
+
+    120% {
+        margin-left: -400%;
+    }
+
+    125% {
+        margin-left: -500%;
+    }
+
+    155% {
+        margin-left: -500%;
+    }
+
+    160% {
+        margin-left: -600%;
+    }
+
+    180% {
+        margin-left: -600%;
+    }
+}
+
+/* Responsive*/
+
+@media only screen and (max-width: 858px) {
+    .checkuno {
+        display: block;
+    }
+
+    .menu {
+        flex-direction: column;
+        overflow: hidden;
+        max-height: 0;
+        opacity: 0;
+        transition: max-height 1s ease, opacity 0.5s ease; 
+        z-index: 1000;
+    }
+
+    nav ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #ffebcd;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+
+    #check:checked ~ .menu {
+        max-height: 100vh; 
+        opacity: 1;
+    }
+
+    #check:not(:checked) ~ .menu {
+        max-height: 0; 
+        opacity: 0; 
+    }
+}
+
+.tour-img {
+    background-image: url(../assets/otono.jpg);
+    height: 500px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.buscar {
+    position: absolute;
+    padding: 5px;
+}
+
+.buscar input {
+    width: 0;
+    height: 40px;
+    padding: 0 20px;
+    font-size: 18px;
+    color: #000000;
+    outline: none;
+    border: 1px solid rgb(99, 8, 8);
+    border-radius: 30px;
+    transition: all 0.6s ease;
+}
+
+.btn-buscar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #635400;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.buscar:hover input {
+    width: 240px;
+}
+
+.buscar input:focus {
+    width: 240px;
+}
+
+
+.abajo{
+    background-color: #000000;
+    color: #fff;
+}
+.nosotros{
+    color: #5c4403;
+}
+
+.contacto {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contacto h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+.contacto form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacto label {
+  margin-bottom: 8px;
+  color: #666;
+}
+
+.contacto input[type="text"],
+.contacto input[type="email"],
+.contacto textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.contacto textarea {
+  resize: vertical;
+}
+
+.contacto button {
+  background-color: #aa8303;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.contacto button:hover {
+  background-color: #473101;
+}
+
+.cafeteria-container {
+    display: flex;
+    align-items: center; 
+}
+
+.cafeteria-image {
+    max-width: 100%; 
+    height: auto;
+}
+
+.cafeteria-content {
+    margin-left: 20px; 
+}
+
+.btn-block {
+    display: block; 
+}
+
+.calificacion {
+    display: flex;
+    flex-direction: column; /* Establece dirección de columna */
+    align-items: center; /* Alinea elementos al centro horizontalmente */
+    margin-left: 20px; /* Espacio entre el contenido y la calificación */
+}
+
+.calificacion p {
+    margin-bottom: 5px; /* Espacio entre el texto y las estrellas */
+}
+
+.calificacion span {
+    font-size: 24px; /* Tamaño de las estrellas */
+    color: #f8ce0b; /* Color de las estrellas (amarillo) */
+}
