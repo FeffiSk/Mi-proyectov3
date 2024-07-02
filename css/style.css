@@ -182,58 +182,6 @@ header {
     }
 }
 
-/* Responsive*/
-
-@media only screen and (max-width: 858px) {
-    .checkuno {
-        display: block;
-    }
-
-    .menu {
-        flex-direction: column;
-        overflow: hidden;
-        max-height: 0;
-        opacity: 0;
-        transition: max-height 1s ease, opacity 0.5s ease; 
-        z-index: 1000;
-    }
-
-    nav ul {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: #ffebcd;
-        top: 80px;
-        left: -100%;
-        text-align: center;
-        transition: all .5s;
-    }
-
-    nav ul li {
-        display: block;
-        margin: 50px 0;
-        line-height: 30px;
-    }
-
-    nav ul li a {
-        font-size: 20px;
-    }
-
-    #check:checked~ul {
-        left: 0;
-    }
-
-    #check:checked ~ .menu {
-        max-height: 100vh; 
-        opacity: 1;
-    }
-
-    #check:not(:checked) ~ .menu {
-        max-height: 0; 
-        opacity: 0; 
-    }
-}
-
 .tour-img {
     background-image: url(../assets/otono.jpg);
     height: 500px;
@@ -367,16 +315,133 @@ header {
 
 .calificacion {
     display: flex;
-    flex-direction: column; /* Establece dirección de columna */
-    align-items: center; /* Alinea elementos al centro horizontalmente */
-    margin-left: 20px; /* Espacio entre el contenido y la calificación */
+    flex-direction: column; 
+    align-items: center;
+    margin-left: 20px; 
 }
 
 .calificacion p {
-    margin-bottom: 5px; /* Espacio entre el texto y las estrellas */
+    margin-bottom: 5px; 
 }
 
 .calificacion span {
-    font-size: 24px; /* Tamaño de las estrellas */
-    color: #f8ce0b; /* Color de las estrellas (amarillo) */
+    font-size: 24px; 
+    color: #f8ce0b; 
+}
+
+.nosotros-chin{
+    background-color:#f0e6d6;
+}
+
+.imagenes {
+    background-color: #fff; /* Fondo blanco para las imágenes */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para efecto de elevación */
+}
+
+.imagenes img {
+    border-radius: 10px; /* Bordes redondeados para las imágenes */
+}
+
+
+@media (max-width: 768px) {
+    .checkuno {
+        display: block;
+    }
+
+    .menu {
+        flex-direction: column;
+        overflow: hidden;
+        max-height: 0;
+        opacity: 0;
+        transition: max-height 1s ease, opacity 0.5s ease; 
+        z-index: 1000;
+    }
+
+    nav ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #ffebcd;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+
+    #check:checked ~ .menu {
+        max-height: 100vh; 
+        opacity: 1;
+    }
+
+    #check:not(:checked) ~ .menu {
+        max-height: 0; 
+        opacity: 0; 
+    }
+
+}
+
+
+@media (max-width: 480px) {
+    .checkuno {
+        display: block;
+    }
+
+    .menu {
+        flex-direction: column;
+        overflow: hidden;
+        max-height: 0;
+        opacity: 0;
+        transition: max-height 1s ease, opacity 0.5s ease; 
+        z-index: 1000;
+    }
+
+    nav ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #ffebcd;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+
+    #check:checked ~ .menu {
+        max-height: 100vh; 
+        opacity: 1;
+    }
+
+    #check:not(:checked) ~ .menu {
+        max-height: 0; 
+        opacity: 0; 
+    }
 }

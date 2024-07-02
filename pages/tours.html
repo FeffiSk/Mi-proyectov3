@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Extasis cafetero - Tours</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="../css/style.css">
@@ -11,7 +13,7 @@
 </head>
 <body>
     <header>
-        <div class="logo">
+        <div class="logo d-flex align-items-center mb-3 mb-md-0">
             <img src="../assets/cafe-sign-svgrepo-com.png" alt="logo">
             <h2 class="nombre-empresa">Extasis Cafetero</h2>
         </div>
@@ -41,80 +43,84 @@
         </div>
     </main>
 
-    <section>
-        <h1>TOURS</h1>
-        <div class="cafeteria-container">
-            <img src="../assets/cafeteria.jpg" alt="lugares" class="cafeteria-image">
-            <div class="cafeteria-content">
-                <p>Ven a visitar una de nuestras cafeterías</p>
-                <button class="btn btn-info btn-block">Reservar</button>
+    <section class="container my-4">
+        <h1 class="text-center">TOURS</h1>
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4 my-2">
+                <div class="cafeteria-container p-3 border rounded d-flex flex-column align-items-center">
+                    <img src="../assets/cafeteria.jpg" alt="lugares" class="cafeteria-image img-fluid rounded mb-2">
+                    <div class="cafeteria-content text-center mb-2">
+                        <p>Ven a visitar una de nuestras cafeterías</p>
+                        <button class="btn btn-info btn-block">Reservar</button>
+                    </div>
+                    <div class="calificacion">
+                        <p>Calificación:</p>
+                        <span>&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                    </div>
+                </div>
             </div>
-            <div class="calificacion">
-                <!-- Ejemplo con estrellas unicode -->
-                <p>Calificación:</p>
-                <span>&#9733;&#9733;&#9733;&#9733;&#9734;</span>
-            </div>
-        </div>
 
-        <div class="cafeteria-container">
-            <img src="../assets/cafeteria3.jpg" alt="lugares" class="cafeteria-image">
-            <div class="cafeteria-content">
-                <p>Ven a visitar una de nuestras cafeterías</p>
-                <button class="btn btn-info btn-block">Reservar</button>
+        <div class="col-12 col-md-6 col-lg-4 my-2">
+                <div class="cafeteria-container p-3 border rounded d-flex flex-column align-items-center">
+                    <img src="../assets/cafeteria3.jpg" alt="lugares" class="cafeteria-image img-fluid rounded mb-2">
+                    <div class="cafeteria-content text-center mb-2">
+                        <p>Ven a visitar una de nuestras cafeterías</p>
+                        <button class="btn btn-info btn-block">Reservar</button>
+                    </div>
+                    <div class="calificacion">
+                        <p>Calificación:</p>
+                        <span>&#9733;&#9733;&#9733;&#9734;&#9734;</span>
+                    </div>
+                </div>
             </div>
-            <div class="calificacion">
-                <!-- Ejemplo con estrellas unicode -->
-                <p>Calificación:</p>
-                <span>&#9733;&#9733;&#9733;&#9734;&#9734;</span>
-            </div>
-        </div>
 
-        <div class="cafeteria-container">
-            <img src="../assets/cafeterias2.jpg" alt="lugares" class="cafeteria-image">
-            <div class="cafeteria-content">
+            <div class="col-12 col-md-6 col-lg-4 my-2">
+            <div class="cafeteria-container p-3 border rounded d-flex flex-column align-items-center">
+            <img src="../assets/cafeterias2.jpg" alt="lugares" class="cafeteria-image img-fluid rounded mb-2">
+            <div class="cafeteria-content text-center mb-2">
                 <p>Ven a visitar una de nuestras cafeterías</p>
                 <button class="btn btn-info btn-block">Reservar</button>
             </div>
             <div class="calificacion">
-                <!-- Ejemplo con estrellas unicode -->
                 <p>Calificación:</p>
                 <span>&#9733;&#9733;&#9734;&#9734;&#9734;</span>
             </div>
         </div>
-
-        <div class="cafeteria-container">
-            <img src="../assets/cafeteriarodante.jpg" alt="lugares" class="cafeteria-image">
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 my-2">
+            <div class="cafeteria-container p-3 border rounded d-flex flex-column align-items-center">
+            <img src="../assets/cafeteriarodante.jpg" alt="lugares" class="cafeteria-image img-fluid rounded mb-2">
             <div class="cafeteria-content">
                 <p>Ven a visitar una de nuestras cafeterías</p>
                 <button class="btn btn-info btn-block">Reservar</button>
             </div>
             <div class="calificacion">
-                <!-- Ejemplo con estrellas unicode -->
                 <p>Calificación:</p>
                 <span>&#9733;&#9733;&#9733;&#9733;&#9734;</span>
             </div>
         </div>
-
-        <div class="cafeteria-container">
-            <img src="../assets/cafeteriarodante2.jpg" alt="lugares" class="cafeteria-image">
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 my-2">
+        <div class="cafeteria-container p-3 border rounded d-flex flex-column align-items-center">
+            <img src="../assets/cafeteriarodante2.jpg" alt="lugares" class="cafeteria-image img-fluid rounded mb-2">
             <div class="cafeteria-content">
                 <p>Ven a visitar una de nuestras cafeterías</p>
                 <button class="btn btn-info btn-block">Reservar</button>
             </div>
             <div class="calificacion">
-                <!-- Ejemplo con estrellas unicode -->
                 <p>Calificación:</p>
                 <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
             </div>
         </div>
+        </div>
 
     </section>
 
-    <footer>
-        <p class="abajo">© 2024 Extasis cafetero, Todos los derechos reservados | Términos de uso | Política de Privacidad</p>
-        <div class="redes">
-            <img src="../assets/instagram.png" alt="instagram">
-            <img src="../assets/facebook.png" alt="facebook">
+    <footer class="bg-light text-center py-3">
+        <p class="abajo mb-2">© 2024 Extasis cafetero, Todos los derechos reservados | Términos de uso | Política de Privacidad</p>
+        <div class="redes d-flex justify-content-center">
+            <img src="../assets/instagram.png" alt="instagram" class="mx-2" style="width: 30px; height: 30px;">
+            <img src="../assets/facebook.png" alt="facebook" class="mx-2" style="width: 30px; height: 30px;">
         </div>
     </footer>
 
