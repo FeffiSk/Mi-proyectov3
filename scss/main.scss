@@ -1,0 +1,15 @@
+// Reset
+@import './config/vars';
+@import './config/mixins';
+@import './config/reset';
+// Estructura Html
+@import './arriba';
+@import './carro';
+@import './pie';
+//Paginas
+@import './tours1';
+@import './tienda1';
+@import './nosotros1';
+@import './contacto1';
+// MQ mobile-tablet
+@import './mq'

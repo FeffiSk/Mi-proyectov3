@@ -1,0 +1,99 @@
+@media screen and (max-width: 768px) {
+    .checkuno {
+        display: block;
+    }
+    
+    .menu {
+        flex-direction: column;
+        overflow: hidden;
+        max-height: 0;
+        opacity: 0;
+        transition: max-height 1s ease, opacity 0.5s ease; 
+        z-index: 1000;
+    }
+    
+    nav ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #ffebcd;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    
+    nav ul li a {
+        font-size: 20px;
+    }
+    
+    #check:checked~ul {
+        left: 0;
+    }
+    
+    #check:checked ~ .menu {
+        max-height: 100vh; 
+        opacity: 1;
+    }
+    
+    #check:not(:checked) ~ .menu {
+        max-height: 0; 
+        opacity: 0; 
+    }  
+}
+
+@media screen and (max-width: 480px) {
+    .checkuno {
+        display: block;
+    }
+
+    .menu {
+        flex-direction: column;
+        overflow: hidden;
+        max-height: 0;
+        opacity: 0;
+        transition: max-height 1s ease, opacity 0.5s ease; 
+        z-index: 1000;
+    }
+
+    nav ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #ffebcd;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+
+    #check:checked ~ .menu {
+        max-height: 100vh; 
+        opacity: 1;
+    }
+
+    #check:not(:checked) ~ .menu {
+        max-height: 0; 
+        opacity: 0; 
+    }
+}

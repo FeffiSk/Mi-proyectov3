@@ -1,0 +1,18 @@
+.redes {
+    text-align: right;
+    margin-right: 1rem;
+  
+    img {
+      height: 40px;
+    }
+    &__fb{
+        @include otromix (30px, 30px);
+      }
+    &__ig{
+        @include otromix (30px, 30px);
+      }
+  }
+  .abajo {
+    background-color: #000000;
+    color: $color-second;
+}
