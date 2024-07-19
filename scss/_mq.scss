@@ -1,99 +1,99 @@
 @media screen and (max-width: 768px) {
-    .checkuno {
+
+    .abrir-menu,
+    .cerrar-menu {
         display: block;
+        border: 0;
+        font-size: 2rem;
+        background-color: transparent;
+        cursor: pointer;
     }
-    
-    .menu {
-        flex-direction: column;
-        overflow: hidden;
-        max-height: 0;
+
+    .abrir-menu {
+        color: #000000;
+    }
+
+    .cerrar-menu {
+        color: #ececec;
+    }
+
+    .nav {
         opacity: 0;
-        transition: max-height 1s ease, opacity 0.5s ease; 
-        z-index: 1000;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: $color-primary;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
     }
-    
-    nav ul {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: #ffebcd;
-        top: 80px;
-        left: -100%;
-        text-align: center;
-        transition: all .5s;
-    }
-    
-    nav ul li {
-        display: block;
-        margin: 50px 0;
-        line-height: 30px;
-    }
-    
-    nav ul li a {
-        font-size: 20px;
-    }
-    
-    #check:checked~ul {
-        left: 0;
-    }
-    
-    #check:checked ~ .menu {
-        max-height: 100vh; 
+
+    .nav.visible {
         opacity: 1;
+        visibility: visible;
     }
-    
-    #check:not(:checked) ~ .menu {
-        max-height: 0; 
-        opacity: 0; 
-    }  
+
+    .nav-list {
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .nav-list li a {
+        color: #000000ec;
+    }
 }
 
-@media screen and (max-width: 480px) {
-    .checkuno {
+@media screen and (max-width: 550px) {
+
+    .abrir-menu,
+    .cerrar-menu {
         display: block;
+        border: 0;
+        font-size: 2rem;
+        background-color: transparent;
+        cursor: pointer;
     }
 
-    .menu {
-        flex-direction: column;
-        overflow: hidden;
-        max-height: 0;
+    .abrir-menu {
+        color: #000000;
+    }
+
+    .cerrar-menu {
+        color: #ececec;
+    }
+
+    .nav {
         opacity: 0;
-        transition: max-height 1s ease, opacity 0.5s ease; 
-        z-index: 1000;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: $color-primary;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
     }
 
-    nav ul {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: #ffebcd;
-        top: 80px;
-        left: -100%;
-        text-align: center;
-        transition: all .5s;
-    }
-
-    nav ul li {
-        display: block;
-        margin: 50px 0;
-        line-height: 30px;
-    }
-
-    nav ul li a {
-        font-size: 20px;
-    }
-
-    #check:checked~ul {
-        left: 0;
-    }
-
-    #check:checked ~ .menu {
-        max-height: 100vh; 
+    .nav.visible {
         opacity: 1;
+        visibility: visible;
     }
 
-    #check:not(:checked) ~ .menu {
-        max-height: 0; 
-        opacity: 0; 
+    .nav-list {
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .nav-list li a {
+        color: #000000ec;
     }
 }

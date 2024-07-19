@@ -19,15 +19,15 @@
 }
 
 .artistico-instagram {
-  color: color #FFB6C1;
+  color: #FFB6C1;
 }
 
 .artistico-facebook {
-  color: color #0000CD;
+  color: #0000CD;
 }
 
 .artistico-three {
-  color: color #0e0d0d;
+  color: #0e0d0d;
 }
 
 * {
@@ -39,48 +39,41 @@
 
 header {
   display: flex;
-  height: 70px;
+  height: 65px;
   justify-content: space-between;
   align-items: center;
   background-color: #be9c02;
+  padding: 2rem;
 }
 header nav a {
   text-decoration: none;
   color: #000000;
-  font-weight: 600;
-  margin-right: 40px;
+  font-weight: 800;
+  margin-right: 30px;
   border-radius: 30px;
+  padding: 10%;
 }
 header nav a:hover {
   background-color: #be9c02;
   color: #fff;
 }
-header .checkuno {
-  font-size: 30px;
-  color: #ffffff;
-  float: right;
-  line-height: 70px;
-  margin-right: 20px;
-  cursor: pointer;
-  display: none;
+header .nav-list {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
 }
-header #check {
-  display: none;
-}
-header .logo {
+
+.logo {
   display: flex;
   align-items: center;
-}
-header .logo img {
+  max-width: 5rem;
   margin-left: 30px;
-  margin-right: 10px;
   height: 50px;
 }
-header .menu {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
+
+.abrir-menu,
+.cerrar-menu {
+  display: none;
 }
 
 .inicio .encabezado-img {
@@ -299,10 +292,10 @@ header .menu {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   max-width: 600px;
 }
-.contacto h2 {
+.contacto h1 {
   margin-bottom: 20px;
   text-align: center;
-  color: color #0e0d0d;
+  color: #0e0d0d;
 }
 .contacto form {
   display: flex;
@@ -338,87 +331,87 @@ header .menu {
 }
 
 @media screen and (max-width: 768px) {
-  .checkuno {
+  .abrir-menu,
+  .cerrar-menu {
     display: block;
+    border: 0;
+    font-size: 2rem;
+    background-color: transparent;
+    cursor: pointer;
   }
-  .menu {
+  .abrir-menu {
+    color: #000000;
+  }
+  .cerrar-menu {
+    color: #ececec;
+  }
+  .nav {
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
     flex-direction: column;
-    overflow: hidden;
-    max-height: 0;
-    opacity: 0;
-    transition: max-height 1s ease, opacity 0.5s ease;
-    z-index: 1000;
+    align-items: end;
+    gap: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #be9c02;
+    padding: 2rem;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
   }
-  nav ul {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background: #ffebcd;
-    top: 80px;
-    left: -100%;
-    text-align: center;
-    transition: all 0.5s;
-  }
-  nav ul li {
-    display: block;
-    margin: 50px 0;
-    line-height: 30px;
-  }
-  nav ul li a {
-    font-size: 20px;
-  }
-  #check:checked ~ ul {
-    left: 0;
-  }
-  #check:checked ~ .menu {
-    max-height: 100vh;
+  .nav.visible {
     opacity: 1;
+    visibility: visible;
   }
-  #check:not(:checked) ~ .menu {
-    max-height: 0;
-    opacity: 0;
+  .nav-list {
+    flex-direction: column;
+    align-items: end;
+  }
+  .nav-list li a {
+    color: rgba(0, 0, 0, 0.9254901961);
   }
 }
-@media screen and (max-width: 480px) {
-  .checkuno {
+@media screen and (max-width: 550px) {
+  .abrir-menu,
+  .cerrar-menu {
     display: block;
+    border: 0;
+    font-size: 2rem;
+    background-color: transparent;
+    cursor: pointer;
   }
-  .menu {
+  .abrir-menu {
+    color: #000000;
+  }
+  .cerrar-menu {
+    color: #ececec;
+  }
+  .nav {
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
     flex-direction: column;
-    overflow: hidden;
-    max-height: 0;
-    opacity: 0;
-    transition: max-height 1s ease, opacity 0.5s ease;
-    z-index: 1000;
+    align-items: end;
+    gap: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #be9c02;
+    padding: 2rem;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
   }
-  nav ul {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background: #ffebcd;
-    top: 80px;
-    left: -100%;
-    text-align: center;
-    transition: all 0.5s;
-  }
-  nav ul li {
-    display: block;
-    margin: 50px 0;
-    line-height: 30px;
-  }
-  nav ul li a {
-    font-size: 20px;
-  }
-  #check:checked ~ ul {
-    left: 0;
-  }
-  #check:checked ~ .menu {
-    max-height: 100vh;
+  .nav.visible {
     opacity: 1;
+    visibility: visible;
   }
-  #check:not(:checked) ~ .menu {
-    max-height: 0;
-    opacity: 0;
+  .nav-list {
+    flex-direction: column;
+    align-items: end;
+  }
+  .nav-list li a {
+    color: rgba(0, 0, 0, 0.9254901961);
   }
 }
 

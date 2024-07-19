@@ -334,13 +334,13 @@ header {
 }
 
 .imagenes {
-    background-color: #fff; /* Fondo blanco para las imágenes */
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para efecto de elevación */
+    background-color: #fff; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 .imagenes img {
-    border-radius: 10px; /* Bordes redondeados para las imágenes */
+    border-radius: 10px; 
 }
 
 
