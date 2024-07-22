@@ -1,9 +1,9 @@
-@mixin margenes ($p,$m){
+@mixin margenes ($p, $m) {
     padding: $p;
     margin: $m;
 }
 
-@mixin otromix ($w,$h){
+@mixin otromix ($w, $h) {
     width: $w;
     height: $h;
 }

@@ -1,21 +1,21 @@
 .my-estilos-xs {
   font-size: 10px;
-  color: #be9c02;
+  color: #4d3200;
 }
 
 .my-estilos-ms {
   font-size: 25px;
-  color: #be9c02;
+  color: #4d3200;
 }
 
 .my-estilos-lg {
   font-size: 30px;
-  color: #be9c02;
+  color: #4d3200;
 }
 
 .my-estilos-xl {
   font-size: 60px;
-  color: #be9c02;
+  color: #4d3200;
 }
 
 .artistico-instagram {
@@ -42,7 +42,7 @@ header {
   height: 65px;
   justify-content: space-between;
   align-items: center;
-  background-color: #be9c02;
+  background-color: #4d3200;
   padding: 2rem;
 }
 header nav a {
@@ -54,20 +54,28 @@ header nav a {
   padding: 10%;
 }
 header nav a:hover {
-  background-color: #be9c02;
+  background-color: #4d3200;
   color: #fff;
 }
-header .nav-list {
+
+.nav-list {
   list-style-type: none;
   display: flex;
-  gap: 1rem;
+  gap: 4rem;
+  top: 0;
+  left: 0;
+}
+
+.nav-list ul {
+  padding: 100px 0px 20px 0px;
+  list-style: none;
 }
 
 .logo {
   display: flex;
   align-items: center;
   max-width: 5rem;
-  margin-left: 30px;
+  margin-left: 5px;
   height: 50px;
 }
 
@@ -92,6 +100,10 @@ header .nav-list {
 .inicio .encabezado-img h1 {
   font-size: 50px;
   padding: 20px;
+}
+
+.fondo-inicio {
+  background-color: #ac8855;
 }
 
 .titulo-carrousel {
@@ -235,6 +247,18 @@ header .nav-list {
   cursor: pointer;
 }
 
+.para-el-fondo {
+  background-color: #ac8855;
+}
+
+.parrafos {
+  color: #000000;
+}
+
+.text-center {
+  color: #000000;
+}
+
 .cafeteria-container {
   display: flex;
   align-items: center;
@@ -276,12 +300,41 @@ header .nav-list {
   border-radius: 10px;
 }
 
+.tienda-pipi {
+  background-color: #ac8855;
+}
+
+.parrafitos {
+  color: white;
+  background-color: #4d3200;
+  border-radius: 10px;
+}
+
 .nosotros {
   color: #5c4403;
 }
 
 .nosotros-chin {
-  background-color: #f0e6d6;
+  background-color: #ac8855;
+}
+
+#main-nosotros {
+  min-height: 77vh;
+}
+
+.nosotros-ft {
+  max-width: 40%;
+  min-width: 30%;
+  font-size: 20px;
+  color: #000000;
+  margin-left: 30%;
+  background-color: #ffffff;
+  border: 4px solid #080808;
+  border-radius: 10px;
+}
+
+#agregar {
+  font-size: 60px;
 }
 
 .contacto {
@@ -330,6 +383,14 @@ header .nav-list {
   background-color: #473101;
 }
 
+#contacto-rari {
+  min-height: 82vh;
+}
+
+.contact {
+  background-color: #ac8855;
+}
+
 @media screen and (max-width: 768px) {
   .abrir-menu,
   .cerrar-menu {
@@ -350,15 +411,16 @@ header .nav-list {
     visibility: hidden;
     display: flex;
     flex-direction: column;
-    align-items: end;
     gap: 1rem;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
-    bottom: 0;
-    background-color: #be9c02;
+    background-color: #705229;
     padding: 2rem;
-    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.7);
+    z-index: 100;
+    height: 100vh;
+    width: 200px;
   }
   .nav.visible {
     opacity: 1;
@@ -366,7 +428,7 @@ header .nav-list {
   }
   .nav-list {
     flex-direction: column;
-    align-items: end;
+    align-items: center;
   }
   .nav-list li a {
     color: rgba(0, 0, 0, 0.9254901961);
@@ -392,15 +454,16 @@ header .nav-list {
     visibility: hidden;
     display: flex;
     flex-direction: column;
-    align-items: end;
     gap: 1rem;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
-    bottom: 0;
-    background-color: #be9c02;
+    background-color: #705229;
     padding: 2rem;
-    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.7);
+    z-index: 100;
+    height: 100vh;
+    width: 200px;
   }
   .nav.visible {
     opacity: 1;
@@ -408,7 +471,7 @@ header .nav-list {
   }
   .nav-list {
     flex-direction: column;
-    align-items: end;
+    align-items: center;
   }
   .nav-list li a {
     color: rgba(0, 0, 0, 0.9254901961);

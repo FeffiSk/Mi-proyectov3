@@ -1,18 +1,19 @@
 // Tipografia
 $title-principal: "Nunito Sans", sans-serif;
 //Colores
-$color-primary: #be9c02;
+$color-primary: #4d3200;
 $color-second: #ffffff;
+$color-tres: #ac8855;
 
 //MAPAS
-$my-estilos:(
+$my-estilos: (
     "xs": 10px,
     "ms": 25px,
     "lg": 30px,
     "xl": 60px,
 );
 
-@each $name, $talla in $my-estilos{
+@each $name, $talla in $my-estilos {
     .my-estilos-#{$name} {
         font-size: $talla;
         color: $color-primary;
@@ -25,8 +26,8 @@ $colors-redsocial: (
     three: #0e0d0d,
 );
 
-@each $rrss, $arte in $colors-redsocial{
-    .artistico-#{$rrss}{
+@each $rrss, $arte in $colors-redsocial {
+    .artistico-#{$rrss} {
         color: $arte;
     }
 }

@@ -4,17 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Bienvenidos a nuestra tienda de cafe, aqui encontraras las diferentes opciones que ofrecemos, 
+    desde el simple y delicioso cafe negro con medialunas hasta el elixir cafe de exportacion. Tenemos lo que buscas para deleitar tu paladar">
+    <meta name="keywords" content="tienda de cafe, granos de cafe, medialunas, cafe gourmet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
         rel="stylesheet">
-    <title>Tienda</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Tienda - Extasis cafetero</title>
 </head>
 
 <body class="tienda-pipi">
@@ -33,75 +38,102 @@
         </nav>
     </header>
     <main class="container my-4">
-        <h2 class="text-center">Selecciona para filtrar las ventas</h2>
-        <form action="/submit-form" method="post" class="mb-4">
-            <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="categoria1" name="categoria" value="Americano">
-                <label class="form-check-label" for="categoria1">Americano</label>
-            </div>
-            <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="categoria2" name="categoria" value="Capuchino">
-                <label class="form-check-label" for="categoria2">Capuchino</label>
-            </div>
-            <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="categoria3" name="categoria" value="Latte">
-                <label class="form-check-label" for="categoria3">Latte</label>
-            </div>
-            <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="categoria4" name="categoria" value="Comida">
-                <label class="form-check-label" for="categoria4">Comida</label>
-            </div>
-            <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="categoria5" name="categoria" value="Promos">
-                <label class="form-check-label" for="categoria5">Promos</label>
-            </div>
-            <button type="submit" class="btn btn-primary mt-3">Filtrar</button>
-        </form>
+        <h1 class="text-center">¿Eres un amante del café en busca de nuevas experiencias y sabores únicos? ¡Tenemos la
+            selección perfecta
+            para ti!</h1>
+        <h2 class="text-center">¿Por qué elegir nuestra variedad de cafés?</h2>
 
+        <p class="parrafitos">Origenes Selectos: Nuestros granos de café provienen de las mejores regiones
+            cafetaleras del mundo. Desde
+            las montañas de Colombia hasta las tierras altas de Etiopía, cada café ofrece una historia y un sabor
+            distintivo.</p>
+
+        <p class="parrafitos">Perfiles de Sabor Únicos: Explora una amplia gama de sabores y aromas. Ya sea que
+            prefieras un café suave
+            y afrutado, un espresso intenso y achocolatado, o un café con notas especiadas y exóticas, tenemos algo que
+            deleitará tu paladar.</p>
+
+        <p class="parrafitos">Sostenibilidad y Comercio Justo: Trabajamos directamente con pequeños productores y
+            cooperativas que
+            practican la agricultura sostenible. Cada taza que disfrutas apoya a las comunidades cafetaleras y el medio
+            ambiente.</p>
+
+        <p class="parrafitos">Medialunas Artesanales: Cada lote de café es tostado con precisión para resaltar su
+            perfil de sabor único.
+            Nuestros maestros tostadores utilizan técnicas artesanales para asegurar la calidad y consistencia en cada
+            taza.</p>
+
+        <p class="parrafitos">Para Cada Momento: Ya sea que necesites un impulso matutino, una pausa revitalizante en
+            la tarde o un
+            momento de relajación por la noche, nuestra variedad de cafés tiene algo perfecto para cada ocasión.</p>
+
+        <h3 class="text-center">No te conformes con menos y explora el mundo del café con nosotros.</h3>
+
+        <section>
+            <div class="row mt-5">
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="imagenes border p-3 text-center" data-aos="fade-right">
+                        <img src="../assets/cafeamericano.jpg" alt="americano" class="img-fluid mb-2">
+                        <p>Blend Espresso: Intenso y robusto, ideal para preparar el espresso perfecto.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="imagenes border p-3 text-center" data-aos="fade-down">
+                        <img src="../assets/cafeastetik.jpg" alt="capuchino" class="img-fluid mb-2">
+                        <p>Blend Espresso: Intenso y robusto, ideal para preparar el espresso perfecto.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="imagenes border p-3 text-center">
+                        <img src="../assets/doscafeshelados.jpg" alt="latte" class="img-fluid mb-2">
+                        <p>¿Qué hace que nuestro café latte sea tan especial? En cada taza de nuestro café latte,
+                            experimentarás una fusión perfecta de aromas intensos y sabores suaves. Utilizamos granos de
+                            café seleccionados meticulosamente de las regiones más renombradas, tostados con precisión
+                            para
+                            resaltar sus notas dulces y sutiles. Nuestros baristas expertos, apasionados por la
+                            perfección,
+                            dominan el arte de la espuma sedosa que corona cada taza, creando una experiencia sensorial
+                            que
+                            cautiva desde el primer sorbo hasta el último.
+                            Disfruta de un momento de deleite con nuestro café latte,
+                            donde cada detalle refleja nuestro compromiso con la excelencia y la calidad.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="imagenes border p-3 text-center" data-aos="fade-up-right">
+                        <img src="../assets/medialunas.jpg" alt="comida" class="img-fluid mb-2">
+                        <p>¿Buscas una experiencia culinaria única que despierte tus sentidos y te transporte a un mundo
+                            de sabores irresistibles? Nuestras medialunas son exactamente lo que necesitas.
+                            ¿Qué hace a nuestras medialunas tan especiales?
+                            Calidad Incomparable: Utilizamos los ingredientes más frescos y de la mejor calidad. Cada
+                            medialuna está elaborada con mantequilla pura, harina de primera y un toque de amor que se
+                            siente en cada bocado.
+                            Sabor Irresistible: Deléitate con el equilibrio perfecto entre una masa suave y
+                            hojaldrada y un sabor ligeramente dulce. Cada medialuna es una obra maestra de la
+                            pastelería.
+                            Artesanía y Pasión: Nuestras medialunas son hechas a mano por expertos pasteleros que
+                            ponen su corazón en cada detalle. La dedicación y el cuidado en su preparación garantizan
+                            una experiencia gastronómica sin igual.
+                            Frescura Garantizada: Horneamos nuestras medialunas diariamente para asegurarnos de que
+                            lleguen a tus manos recién salidas del horno, con ese aroma tentador que te invita a
+                            probarlas de inmediato.
+                            Perfectas para Cualquier Ocasión: Ya sea para un desayuno especial, una merienda con
+                            amigos o simplemente para consentirte, nuestras medialunas son la elección ideal.
+                            No esperes más y déjate conquistar por el sabor y la textura inigualables de nuestras
+                            medialunas exquisitas.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="imagenes border p-3 text-center">
+                        <img src="../assets/variedadecafes.jpg" alt="promos" class="img-fluid mb-2">
+                        <p>Exclusividad: Este elixir es una edición limitada, creada para aquellos que buscan lo
+                            extraordinario en cada taza.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-    <section>
-        <div class="row mt-5">
-            <div class="col-12 col-md-6 col-lg-4 mb-4">
-                <div class="imagenes border p-3 text-center">
-                    <img src="../assets/cafeamericano.jpg" alt="americano" class="img-fluid mb-2">
-                    <p>Ven a visitar una de nuestras cafeterias</p>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 mb-4">
-                <div class="imagenes border p-3 text-center">
-                    <img src="../assets/cafeastetik.jpg" alt="capuchino" class="img-fluid mb-2">
-                    <p>Ven a visitar una de nuestras cafeterias</p>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 mb-4">
-                <div class="imagenes border p-3 text-center">
-                    <img src="../assets/doscafeshelados.jpg" alt="latte" class="img-fluid mb-2">
-                    <p>¿Qué hace que nuestro café latte sea tan especial? En cada taza de nuestro café latte,
-                        experimentarás una fusión perfecta de aromas intensos y sabores suaves. Utilizamos granos de
-                        café seleccionados meticulosamente de las regiones más renombradas, tostados con precisión para
-                        resaltar sus notas dulces y sutiles. Nuestros baristas expertos, apasionados por la perfección,
-                        dominan el arte de la espuma sedosa que corona cada taza, creando una experiencia sensorial que
-                        cautiva desde el primer sorbo hasta el último.
-                        Disfruta de un momento de deleite con nuestro café latte,
-                        donde cada detalle refleja nuestro compromiso con la excelencia y la calidad.</p>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 mb-4">
-                <div class="imagenes border p-3 text-center">
-                    <img src="../assets/medialunas.jpg" alt="comida" class="img-fluid mb-2">
-                    <p>Ven a visitar una de nuestras cafeterias rodantes por todo el mundo</p>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 mb-4">
-                <div class="imagenes border p-3 text-center">
-                    <img src="../assets/variedadecafes.jpg" alt="promos" class="img-fluid mb-2">
-                    <p>Ven a visitar una de nuestras cafeterias rodantes por todo el mundo</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    </main>
-    <footer class="bg-light text-center py-3">
+    <footer class="text-center py-3">
         <p class="abajo mb-2">© 2024 Extasis cafetero, Todos los derechos reservados | Términos de uso | Política de
             Privacidad</p>
         <div class="redes d-flex justify-content-center">
@@ -109,10 +141,14 @@
             <img src="../assets/facebook.png" alt="facebook" class="mx-2 k__fb">
         </div>
     </footer>
-    <script src="../main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="../main.js"></script>
 </body>
 
 </html>

@@ -14,25 +14,33 @@ header {
       margin-right: 30px;
       border-radius: 30px;
       padding: 10%;
+
       &:hover {
         background-color: $color-primary;
         color: #fff;
       }
     }
   }
+}
 
-  .nav-list {
-    list-style-type: none;
-    display: flex;
-    gap: 1rem;
-  }
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  gap: 4rem;
+  top: 0;
+  left: 0;
+}
+
+.nav-list ul {
+  padding: 100px 0px 20px 0px;
+  list-style: none;
 }
 
 .logo {
   display: flex;
   align-items: center;
   max-width: 5rem;
-  margin-left: 30px;
+  margin-left: 5px;
   height: 50px;
 }
 
@@ -61,4 +69,8 @@ header {
       padding: 20px;
     }
   }
+}
+
+.fondo-inicio {
+  background-color: $color-tres;
 }
