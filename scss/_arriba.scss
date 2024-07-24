@@ -3,7 +3,7 @@ header {
   height: 65px;
   justify-content: space-between;
   align-items: center;
-  background-color: $color-primary;
+  background-color: $color-tres;
   padding: 2rem;
 
   nav {
@@ -17,7 +17,7 @@ header {
 
       &:hover {
         background-color: $color-primary;
-        color: #fff;
+        color: $color-second;
       }
     }
   }
